@@ -1,0 +1,17 @@
+# ignore everything
+*
+
+# keep track of specific files
+!/.scripts
+!/.scripts/*
+!/.config
+.config/*
+!/.config/i3
+!/.config/i3/*
+!.bashrc
+!.gitignore
+!.inputrc
+!README.md
+!/.atom/
+.atom/*
+!/.atom/keymap.cson
