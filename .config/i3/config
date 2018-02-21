@@ -206,13 +206,12 @@ bindsym XF86Battery exec gnome-power-statistics
 # Move entire workspace
 bindsym $mod+ctrl+Tab move workspace to output left
 # Run standard screen layout
-bindsym $mod+ctrl+d exec .screenlayout/work.sh
+bindsym $mod+ctrl+d exec .screenlayout/DefaultScreens.sh
 # Run onescreen layout
-bindsym $mod+ctrl+o exec .screenlayout/travel.sh
+bindsym $mod+ctrl+o exec .screenlayout/onescreen.sh
 
 for_window [class="Sky" instance="sky"] floating enable
 for_window [class="^sky$" instance="^sky$"] floating enable
-
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
