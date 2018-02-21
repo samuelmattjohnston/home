@@ -2,6 +2,36 @@
 only tested on ubuntu 16.04
 use at own risk. for my own reference, and others that keep asking about my setup.
 
+# Usage
+It's a git repo full of dotfiles... Use it with git... or just download the zip and do things the more old-school way of moving files.
+
+What I do:
+
+    # go to home dir
+    cd
+
+    # initialize empty repo
+    git init
+
+    # add remote url. Change if you fork
+    git remote add origin git@github.com:samuelmattjohnston/home.git
+
+    # Make sure you save yourself by pullin in the .gitignore
+    git fetch
+    git checkout origin/master -- .gitignore
+    git checkout origin/master -- README.md
+
+    # reset your uninitialzed repo to master, or some other branch so you can see the diffs
+    git reset origin/master
+
+From here do what you want. You can checkout my files directly, merge them in using your favourite diff tool, or you can go to setting up your own branch for some redundancy:
+
+    git checkout -b $USER
+    git add -A
+    git commit -m 'Initial commit of my files'
+
+And you can push this up to your own repo, or just as a backup.
+
 # my ppas
     for APT in `find /etc/apt/ -name \*.list`; do
          grep -o "^deb http://ppa.launchpad.net/[a-z0-9\-]\+/[a-z0-9\-]\+" $APT | while read ENTRY ; do
