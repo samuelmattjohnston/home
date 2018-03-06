@@ -15,3 +15,9 @@
 !/.atom/
 .atom/*
 !/.atom/keymap.cson
+!/.local/
+.local/*
+!/.local/bin
+.local/bin/*
+!.local/bin/slack
+
