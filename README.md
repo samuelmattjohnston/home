@@ -41,6 +41,9 @@ And you can push this up to your own repo, or just as a backup.
          done
      done
 
+credit to:
+https://askubuntu.com/a/148968
+
 ## All PPAs I  use
 
     sudo apt-add-repository ppa:openrazer/stable    
@@ -104,6 +107,21 @@ laptop backlight controls
     sudo make
     sudo make install
 
+## Managing your atom packages
+
+Get list of installed community packages:
+
+    apm list --installed --bare > package-list.txt
+
+This will get you a list of community packages you've got installed with atom.
+
+To install again:
+
+    apm install --packages-file package-list.txt
+
+credit to:
+https://discuss.atom.io/t/installed-packages-list-into-single-file/12227/2
+
 # extras for life
 
 ## apt install
@@ -127,4 +145,4 @@ tilix - not recommended due to startup issues i'm having. *should* be quicker th
 ### Stop nautilus from opening up gnome desktops when launched (Needed for i3wm setups)
 
     gsettings set org.gnome.desktop.background show-desktop-icons false
-    gsettings set org.gnome.desktop.background draw-background false.
+    gsettings set org.gnome.desktop.background draw-background false
