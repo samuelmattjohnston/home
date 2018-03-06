@@ -122,4 +122,9 @@ hexchat
 
 ## other/testing
 
-tilix - not recommended due to startup issues i'm having. *should* be quicker than terminator, but due to startup/source logic issues i'm having no luck getting it to run without errors/lag.
+tilix - not recommended due to startup issues i'm having. *should* be quicker than terminator, but due to startup/source logic issues i'm having no luck getting it to run without errors/lag
+
+### Stop nautilus from opening up gnome desktops when launched (Needed for i3wm setups)
+
+    gsettings set org.gnome.desktop.background show-desktop-icons false
+    gsettings set org.gnome.desktop.background draw-background false.
